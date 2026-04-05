@@ -36,3 +36,11 @@ Users can browse a list of popular titles and view detailed information about ea
 | Ismail Babani   | Lead Developer          | Managed GitHub repository and handled API integration |
 | Carson Beckmann | UI/UX Designer          | Designed layouts using Flexbox and improved user interface |
 
+---
+
+##  Setup Instructions
+
+###  Clone the Repository
+```bash
+git clone https://github.com/IsmaelB47/Final-Project-SDEV257-50P-IO-202530-I-82X
+
