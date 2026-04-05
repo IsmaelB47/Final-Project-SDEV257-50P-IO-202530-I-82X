@@ -36,11 +36,3 @@ Users can browse a list of popular titles and view detailed information about ea
 | Ismail Babani   | Lead Developer          | Managed GitHub repository and handled API integration |
 | Carson Beckmann | UI/UX Designer          | Designed layouts using Flexbox and improved user interface |
 
----
-
-## Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
