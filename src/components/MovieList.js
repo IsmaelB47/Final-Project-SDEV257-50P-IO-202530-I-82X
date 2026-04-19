@@ -18,6 +18,14 @@ const MovieList = () => {
   }, []);
 
   const fetchMovies = async () => {
+    console.log(
+      "DEBUG: Token length is:",
+      process.env.EXPO_PUBLIC_TMDB_TOKEN?.length,
+    );
+    console.log(
+      "DEBUG: First 5 chars:",
+      process.env.EXPO_PUBLIC_TMDB_TOKEN?.substring(0, 5),
+    );
     try {
       // 1. Log to confirm the function starts
       console.log("Starting fetch from TMDB...");
