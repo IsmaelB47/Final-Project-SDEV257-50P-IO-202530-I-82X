@@ -1,19 +1,18 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 import MovieList from "./src/components/MovieList";
-import { styles } from "./src/styles/styles";
+import DetailsScreen from "./src/screens/DetailsScreen";
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
-        <StatusBar style="auto" />
-        <View style={styles.header}>
-          <Text style={styles.headerTitle}>Popular Movies</Text>
-        </View>
-        <MovieList />
-      </SafeAreaView>
-    </SafeAreaProvider>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={MovieList} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
