@@ -19,9 +19,7 @@ export default function DetailsScreen({ route }) {
 
       <Text style={styles.overview}>{movie.overview}</Text>
 
-      <Text style={styles.date}>
-        Release Date: {movie.release_date}
-      </Text>
+      <Text style={styles.date}>Release Date: {movie.release_date}</Text>
     </ScrollView>
   );
 }
@@ -37,7 +35,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 22,
-    fontWeight: "bold",
+    fontWeight: "700",
     marginTop: 10,
   },
   rating: {

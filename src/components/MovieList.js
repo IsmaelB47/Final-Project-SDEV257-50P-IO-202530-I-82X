@@ -11,12 +11,10 @@ import {
 export default function MovieList({ navigation }) {
   const [movies, setMovies] = useState([]);
 
-  const API_KEY = "f51054e72535d68f43a7c12662ce3bc8";
+  const API_KEY = process.env.EXPO_PUBLIC_TMDB_TOKEN;
 
   useEffect(() => {
-    fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
-    )
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
       .then((res) => res.json())
       .then((data) => setMovies(data.results))
       .catch((err) => console.log(err));
